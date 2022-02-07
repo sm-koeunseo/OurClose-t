@@ -1,0 +1,31 @@
+.header {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: white;
+
+}
+
+.header_logo {
+    line-height: 100px;  /*로고 높이*/
+    text-align: center;  /*로고 가운데 정렬*/
+    margin: 20px;
+}
+
+.header_left {
+    position: absolute;  /*absolute를 안넣어주면 로고와 겹쳐지지가 않아서 넣어줬습니다..*/
+    top: 52px;
+    left: 4px;
+    width: 20%;
+}
+.gender{
+    width: 20%;
+    background-color: white;
+    border: 0;
+}
+
+.header_right {
+    position: absolute;
+    top: 20px;
+    right: 4px;
+}

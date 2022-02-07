@@ -1,10 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+//import LoginPage from './component/LoginPage';
+import MainPage from './component/MainPage/MainPage';
+//import UploadPage from './component/UploadPage'
 
-function App() {
-  return (
-    <></>
-  );
+
+class App extends Component {
+    // constructor(props){
+    //     super(props);
+    //     this.state ={
+    //         mode:'login'
+    //     }
+    // }
+
+    // getContent(){
+    //     var page;
+    //     if (this.state.mode==='login'){
+    //         page = <LoginPage/>
+    //     } else if (this.state.mode==='main'){
+    //         page = <MainPage/>
+    //     }
+
+    //     return page
+    // }
+
+    render(){
+        return(
+            <div>
+                {/* {this.getContent()} */}
+                <MainPage></MainPage>
+            </div>
+        )
+    }
 }
 
 export default App;

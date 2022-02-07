@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+.detail{
+    background-color: white;
+    width: 30%;
+    height: 65vh;
+    margin-top: 5vh;
+}
+.hahaha{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2em;
+    height: 15%;
+}
+
+.item_name{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+}
+.item_size{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+.item_price{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+.choice{
+    display: flex;
+    justify-content: space-evenly;
+}
+.face{
+    border: 0;
+    color: rgb(54,54,54);
+    background-color: white;
+}
+.chat{
+    cursor: pointer;
+    background-color: rgb(03, 66, 35,0.9);
+    color: rgba(255, 255, 255);
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 50%;
+}

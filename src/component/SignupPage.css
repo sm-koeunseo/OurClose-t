@@ -1,0 +1,134 @@
+.container{
+    display : grid;
+    grid-template-rows:730px;
+    grid-gap : 0; /*사이드와 메인 사이의 갭 차이:0*/
+    grid-template-columns :50% 50%; /*각각의 그리드가 반을 차지하게*/
+    grid-template-areas:"left right";
+}
+.left{
+    grid-area:left;
+    background-color: rgb(03,66,35);
+}
+.right{
+    grid-area:right;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*왼쪽*/
+.join_our_closet{
+    position: absolute;
+    left: 200px;
+    top: 280px;
+
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 112px;
+    text-align: right;
+}
+
+/*오른쪽*/
+.title{
+    position:absolute;
+    width:400px;
+    left:868px;
+    top:90px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 112px;
+    text-align: center;
+    color: rgb(0, 0, 0); 
+}
+
+/*로그인 입력*/
+.Login_from{
+    position: absolute;
+    width: 400px;
+    left: 863px;
+    top: 300px;
+}
+/*id pw 구별 선*/
+.Login_Row{
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(229, 229, 229, 0.54);
+
+    padding: 12px;
+}
+/*아이콘*/
+.Login_icon{
+    padding: 6px;
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 1;
+    overflow: visible;
+}
+/*아이콘 움직이게*/
+.Login_path{
+    animation : icon 5s alternate;
+}
+@keyframes icon {
+    to {
+        stroke-dasharray: 80;
+    }
+    from {
+        stroke-dasharray: 0;
+    }
+}
+/*이메일*/
+.login_input_id{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.9);
+    background: transparent;
+    border: none;
+    outline: none;
+}
+/*비밀번호*/
+.login_input_pw{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.9);
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/*placeholder(email, pw)*/
+input::placeholder {
+    color: rgb(0, 0, 0,0.5);
+}
+
+/*버튼*/
+.sign_up_button{
+    position: absolute;
+    width: 250px;
+    top: 240px;
+    left: 50px;
+    height: 75px;
+    font-size: 25px;
+    
+    color: rgb(255, 255, 255);
+    background: #036635;
+    border-radius: 60px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+/*잠깐 공간*/
+.space{
+    padding: 10px;
+}
+/*꽉 차게*/
+body{
+    margin: 0;
+}

@@ -1,0 +1,156 @@
+html, body{
+    background-color: rgb(03, 66, 35);
+    margin:0;
+    overflow:hidden;
+}
+/* .container{
+} */
+.left{
+    background-color: white;
+    width: 50%;
+    height: 100vh;
+    float:left;
+}
+.title{
+    /* position:absolute; */
+    /* width:400px; */
+    left:180px;
+    /* top:90px; */
+    margin-top:20vh;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 112px;
+    text-align: center;
+    color: rgb(0, 0, 0); 
+}
+/*로그인 입력*/
+.Login_from{
+    /* position:absolute; */
+    /* width: 400px; */
+    left: 180px;
+    /* top: 270px; */
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/*id pw 구별 박스*/
+.Login_Row{
+    width: 350px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    background-color: rgba(229, 229, 229, 0.54);;
+}
+/*아이콘*/
+.Login_icon{
+    padding: 6px;
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: rgba(0, 0, 0);
+    stroke-width: 1;
+    overflow: visible;
+}
+
+/*아이콘 움직이게*/
+.Login_path{
+    animation : icon 5s alternate;
+}
+@keyframes icon {
+    to {
+        stroke-dasharray: 80;
+    }
+    from {
+        stroke-dasharray: 0;
+    }
+}
+/*이메일*/
+.login_input_id{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.9);
+    background: transparent;
+    border: none;
+    outline: none;
+    
+}
+/*비밀번호*/
+.login_input_pw{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.9);
+    background: transparent;
+    border: none;
+    outline: none;
+    
+}
+/*placeholder(email, pw)*/
+input::placeholder {
+    color: rgba(37, 37, 37, 0.384);
+}
+
+/*잠깐 공간*/
+.space{
+    padding: 10px;
+}
+
+/*구글 버튼*/
+.google_button{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.7);
+    border: 1;
+
+    border: 3px solid rgba(229, 229, 229, 0.54);
+    font-family: Roboto;
+    font-style: text-top;
+    font-weight: bold;
+    vertical-align: baseline;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0,0.5);
+
+    width: 374px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+/*로그인 버튼*/
+.login_button{
+    cursor: pointer;
+    background-color: rgb(03, 66, 35,0.9);
+    color: rgba(255, 255, 255);
+    font-size:x-large;
+    width: 250px;
+    height: 80px;
+
+
+    border-radius: 60px;
+}
+/*회원가입*/
+.Login_signup{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    word-spacing: 2em; 
+    width: 76%
+}
+.Login_signup a{
+    color: rgb(0, 0, 0);
+    cursor: pointer;  /*커서를 갖다 댈 때 모양*/
+}
+
+
+
+
+.right{
+    padding-left: 20%;
+    float:left;
+}
+.right span{
+    color: white;
+    font-size: 10ex;
+}

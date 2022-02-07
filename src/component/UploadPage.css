@@ -1,0 +1,125 @@
+/*전체 배경*/
+body{
+    background-color: rgb(03, 66, 35);
+}
+/*하얀 네모*/
+.share_box {
+    position: absolute;
+    width: 959px;
+    height: 645px;
+    left: 270px;
+    top: 96px;
+
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+/*큰 타이틀*/
+.share_title{
+    float: left;
+}
+/*옷걸이 모양*/
+.cloth {
+    position: relative;
+    left: 48%;
+    top: 38px;
+}
+/*큰 타이틀 글*/
+.share_title_text{
+    position: absolute;
+    width: 454px;
+    height: 101px;
+    left: 150px;
+    top: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+
+    color: #000000;
+}
+
+/*이미지 삽입*/
+.upload_image{
+    cursor: pointer;
+    position: absolute;
+    width: 300px;
+    height: 380px;
+    left: 400px;
+    top: 280px;
+
+    line-height: 375px;
+    text-align: center;
+    font-size: x-large;
+    background: rgba(229, 229, 229, 0.54);
+}
+/*게시글 삽입*/
+.upload_text{
+    position: absolute;
+    width: 300px;
+    height: 380px;
+    left: 800px;
+    top: 280px;
+    background: rgba(255, 255, 255);
+    flex-direction: column;
+}
+.product_name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    font-weight:bold;
+    border-bottom: 2px solid rgb(03, 66, 35);
+    color: rgba(0, 0, 0, 0.6);
+    
+}
+
+.input_product{
+    width:300px;
+    display: flex;
+    
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.9);
+    background: transparent;
+    border: none;
+    outline: none;
+}
+/*잠깐 공간*/
+.space{
+    padding: 5px;
+}
+
+
+/*카테고리*/
+details > summary {background:rgb(255, 255, 255); font-weight:bold; color:rgba(0, 0, 0, 0.6); font-size: 1rem; padding:10px; outline:0; cursor:pointer; transition:background0.5s; text-align:left; border-bottom: 2px solid rgb(03, 66, 35);}
+/* details > summary::-webkit-details-marker { background:rgb(255, 255, 255); color:#fff; background-size:contain; transform:rotate3d(0, 0, 1, 90deg); transition:transform 0.25s;} */
+details[open] > summary::-webkit-details-marker { transform:rotate3d(0, 0, 1, 180deg);}
+details[open] > summary { background:rgb(255, 255, 255);}
+details[open] > summary ~ * { animation:reveal 0.5s;}
+@keyframes reveal {
+    from { opacity:0; transform:translate3d(0, -30px, 0); }
+    to { opacity:1; transform:translate3d(0, 0, 0); }
+}
+.upload_button{
+    position:relative;
+    cursor: pointer;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border:none;
+    color: white;
+    margin: 1;
+}
+.upload_button:hover{color: rgba(0, 0, 0, 0.6);}
+
+.submit_button{
+    position:relative;
+    cursor: pointer;
+    background-color: rgb(03, 66, 35,0.9);
+    color: rgba(255, 255, 255);
+    font-size:x-large;
+    width: 250px;
+    height: 80px;
+    left: 10%;
+    border-radius: 60px;
+}
