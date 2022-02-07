@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
+import Header from '../Header';
+import Navbar from '../Navbar';
 
 class Top extends Component{
     render(){
         return(
-            <div>top</div>
+            <div>
+                <Header/>
+                <Navbar/>
+                top
+            </div>
         )
     }
 }

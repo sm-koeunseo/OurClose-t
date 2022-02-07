@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
+import Header from '../Header';
+import Navbar from '../Navbar';
 
 class Bags extends Component{
     render(){
         return(
-            <div>bags</div>
+            <div>
+                <Header/>
+                <Navbar/>
+                bags
+            </div>
         )
     }
 }
