@@ -20,17 +20,23 @@ class Home extends Component {
                 <Navbar/>
 
                 <div className="home_up">
-                    <img src={image1} alt="image1"></img>
-                    <img src={image2} alt="image2"></img>
-                    <img src={image3} alt="image3"></img>
+                    <img style={{marginRight:"70px"}} src={image1} alt="image1"></img>
+                    <div style={{marginLeft:"40px"}} className='home_up_right'>
+                        <img src={image2} alt="image2"></img>
+                        <div><img style={{marginLeft:"15px", marginTop:"5px"}} src={image3} alt="image3"></img></div>
+                    </div>
                 </div>
 
-                <div className="home_down">
-                <img src={down} alt="down"></img><br/>
-                <Link to="/detail"><img src={down1} alt="down1"></img></Link>
-                <img src={down2} alt="down2"></img>
-                <img src={down3} alt="down3"></img>
-                <img src={down4} alt="down4"></img>
+                <div>
+                    <div className="home_down">
+                        <img style={{marginTop:"40px", marginBottom:"20px"}} src={down} alt="down"></img>
+                    </div>
+                    <div className="home_down_down">
+                        <Link to="/detail"><img src={down1} alt="down1"></img></Link>
+                        <img src={down2} alt="down2"></img>
+                        <img src={down3} alt="down3"></img>
+                        <img src={down4} alt="down4"></img>
+                    </div>
                 </div>
             </div>
         )

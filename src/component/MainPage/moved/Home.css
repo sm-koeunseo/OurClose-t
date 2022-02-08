@@ -1,0 +1,19 @@
+.home_up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+.home_up_right{
+    justify-content: center;
+}
+
+.home_down{
+    display: flex;
+    justify-content: space-around;
+}
+.home_down_down{
+    display: flex;
+    justify-content: space-evenly;
+}
