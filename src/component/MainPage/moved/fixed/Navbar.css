@@ -5,18 +5,18 @@ nav {
     align-items: center;
     z-index: 100;
     width: 100%;
-
+    display: flex;
+    justify-content: space-between;
 }
 
-.button{
+.button_back{
     background-color: rgba(03, 66, 35);
     color: white;
-    border: 0;
-
+    text-decoration: none;
     /* 수평정렬, 5개의 button을 각각 20% width만큼 할당 */
     text-align: center;
     float: left;
-    width: 20%;
+    width: 17%;
 
     /* 세로길이 설정 */
     height: 45px;
@@ -24,4 +24,5 @@ nav {
 
     cursor: pointer;
 }
-.button:hover{color: rgba(0, 0, 0, 0.6);}
+
+.button_back:hover{color: rgba(0, 0, 0, 0.6);}
