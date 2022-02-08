@@ -8,6 +8,7 @@ import App from "./App";
 import Home from "./component/MainPage/moved/Home";
 import Detail from "./component/MainPage/moved/Detail";
 import MyPage from "./component/MainPage/moved/Mypage";
+import UploadPage from "./component/UploadPage";
 import Bags from "./component/MainPage/moved/fixed/navbar_components/bags";
 import Dress from "./component/MainPage/moved/fixed/navbar_components/dress";
 import Outer from "./component/MainPage/moved/fixed/navbar_components/outer";
@@ -31,6 +32,8 @@ render(
       <Route path="pants" element={<Pants />} />
       <Route path="skirt" element={<Skirt />} />
       <Route path="top" element={<Top />} />
+
+      <Route path="upload" element={<UploadPage/>}/>
     </Routes>
   </BrowserRouter>,
   rootElement
